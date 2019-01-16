@@ -35,6 +35,13 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+#Boot and Gapps Arch
 TARGET_BOOT_ANIMATION_RES := 1080
-
 TARGET_GAPPS_ARCH := arm64
+
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Moto G5" \
+    PRIVATE_BUILD_DESC="cedric-8.1/OPPS28.85-13-2/2:user/release-keys"
+
+BUILD_FINGERPRINT := motorola/cedric/cedric:8.1/OPPS28.85-13-2/2:user/release-keys
