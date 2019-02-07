@@ -19,7 +19,7 @@
 $(call inherit-product, device/motorola/cedric/full_cedric.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -27,7 +27,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cedric
-PRODUCT_NAME := aosp_cedric
+PRODUCT_NAME := bootleg_cedric
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -44,3 +44,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="cedric-8.1/OPPS28.85-13-2/2:user/release-keys"
 
 BUILD_FINGERPRINT := motorola/cedric/cedric:8.1/OPPS28.85-13-2/2:user/release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \     PRODUCT_NAME="Moto G5" 
+DEVICE_MAINTAINERS := "Henrique Tc"(HtcTech)"
+BOOTLEGGERS_BUILD_TYPE :="Shishufied"
+
