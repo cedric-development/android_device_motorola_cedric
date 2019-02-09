@@ -45,8 +45,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := motorola/cedric/cedric:8.1/OPPS28.85-13-2/2:user/release-keys
 
-PRODUCT_BUILD_PROP_OVERRIDES += \     PRODUCT_NAME="Moto G5" 
 DEVICE_MAINTAINERS := "Henrique Tc"(HtcTech)"
 BOOTLEGGERS_BUILD_TYPE := Shishufied
+
+
+
+
 
 
